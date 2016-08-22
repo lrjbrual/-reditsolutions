@@ -11,7 +11,7 @@ gem 'redis'
 gem 'sass-rails'
 gem 'jquery-rails'
 gem 'uglifier'
-gem 'bootstrap-sass'
+gem 'materialize-sass'
 gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
@@ -23,8 +23,8 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'spring'
-  
-  
+
+
 end
 
 gem 'rails_12factor', group: :production
