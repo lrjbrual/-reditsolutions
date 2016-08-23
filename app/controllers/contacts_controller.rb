@@ -1,4 +1,4 @@
-class ContactController < ApplicationController
+class ContactsController < ApplicationController
   def new
     @contact = Contact.new
   end
@@ -14,4 +14,4 @@ class ContactController < ApplicationController
       redirect_to root_path
     end
   end
-end
+end 
