@@ -11,3 +11,18 @@
 @import "layout/_navbar";
 @import "pages/index";
 @import "vendor/index";
+@import "components/icons";
+
+html {
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
