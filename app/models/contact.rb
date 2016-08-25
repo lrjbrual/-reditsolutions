@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 class Contact < MailForm::Base
   append :remote_ip, :user_agent, :session
 
@@ -15,5 +14,3 @@ class Contact < MailForm::Base
   }
   end
 end
-
->>>>>>> origin/master
