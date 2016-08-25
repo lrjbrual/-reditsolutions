@@ -13,7 +13,6 @@ gem 'jquery-rails'
 gem 'uglifier'
 gem 'materialize-sass'
 gem 'font-awesome-sass'
-gem 'mail_form'
 gem 'autoprefixer-rails'
 gem 'mail_form'
 
