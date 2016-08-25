@@ -11,7 +11,7 @@ class Contact < MailForm::Base
     {
     subject: "Contact Form",
     to: "lrjbrual@lrjbrual.com",
-    from: %("#{name}" <#{email}>)
+    from: %("#{first_name}" <#{email}>)
   }
   end
 end
