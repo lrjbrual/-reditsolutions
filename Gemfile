@@ -25,4 +25,8 @@ group :development, :test do
   gem 'spring'
 end
 
+group :development do
+  gem "debugger"
+end
+
 gem 'rails_12factor', group: :production
