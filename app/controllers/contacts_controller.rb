@@ -18,15 +18,5 @@ class ContactsController < ApplicationController
       redirect_to root_path
     end
   end
-
-=======
-  def new
-  	@contact = Conctact.new
-  end
-
-  def create
-@contact = Contact.new(params[:contact])
-@contact.request = request
-  end
 >>>>>>> origin/master
 end
