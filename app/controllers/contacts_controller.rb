@@ -1,4 +1,5 @@
 class ContactsController < ApplicationController
+<<<<<<< HEAD
 
   def new
     @contact = Contact.new
@@ -18,4 +19,14 @@ class ContactsController < ApplicationController
     end
   end
 
+=======
+  def new
+  	@contact = Conctact.new
+  end
+
+  def create
+@contact = Contact.new(params[:contact])
+@contact.request = request
+  end
+>>>>>>> origin/master
 end

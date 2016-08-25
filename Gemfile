@@ -15,6 +15,7 @@ gem 'materialize-sass'
 gem 'font-awesome-sass'
 gem 'mail_form'
 gem 'autoprefixer-rails'
+gem 'mail_form'
 
 group :development, :test do
   gem 'binding_of_caller'
