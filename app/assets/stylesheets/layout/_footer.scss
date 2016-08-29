@@ -1,1 +1,16 @@
 // Your footer style
+ul.footer-layout {
+    list-style-type: none;
+    margin: 0;
+
+}
+li.li-footer{
+    padding: 2px 10px 2px 0px;
+    display: inline;
+}
+ul {
+  float:right;
+}
+.footer-copyright{
+  // text-align: center;
+}

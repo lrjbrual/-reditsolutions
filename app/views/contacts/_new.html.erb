@@ -15,25 +15,24 @@
         <div class="col s6"><i class="material-icons md-36 left">email</i>
         <br>
         <div class="row">
-   <form class="col s12">
-     <%= form_for :contact, url: contacts_path do |f| %>
-     <div class="row">
-       <div class="input-field col s6">
-         <%= f.text_field :first_name, required:true, id:"first_name", type:"text", class: "validate" %>
-         <%= f.label :first_name, for:"first_name"  %>
-       </div>
-       <div class="input-field col s6">
-         <%= f.text_field :last_name, required:true, id:"last_name", type:"text", class: "validate" %>
-         <%= f.label :last_name, for:"last_name"  %>
-       </div>
-      </div>
-
-     <div class="row">
-       <div class="input-field col s12 left">
-         <%= f.email_field :email, required:true, id: "email", type: "email", class:"validate" %>
-         <%= f.label :your_email, for: "Email" %>
-       </div>
-           <div class="input-field col s12">
+         <form class="col s12">
+           <%= form_for :contact, url: contacts_path do |f| %>
+           <div class="row">
+             <div class="input-field col s6">
+               <%= f.text_field :first_name, required:true, id:"first_name", type:"text", class: "validate" %>
+               <%= f.label :first_name, for:"first_name"  %>
+             </div>
+             <div class="input-field col s6">
+               <%= f.text_field :last_name, required:true, id:"last_name", type:"text", class: "validate" %>
+               <%= f.label :last_name, for:"last_name"  %>
+             </div>
+            </div>
+            <div class="row">
+            <div class="input-field col s12 left">
+              <%= f.email_field :email, required:true, id: "email", type: "email", class:"validate" %>
+              <%= f.label :your_email, for: "Email" %>
+            </div>
+            <div class="input-field col s12">
              <%= f.text_field :message, required:true, id: "textarea1", class:"materizalize-textarea"%>
              <%= f.label :type_your_message, for: "textarea1" %>
            </div>
@@ -44,7 +43,7 @@
      <% end %>
    </form>
  </div>
-
-  </div>
-  </div>
+</div>
+</div>
+</div>
 </div>
