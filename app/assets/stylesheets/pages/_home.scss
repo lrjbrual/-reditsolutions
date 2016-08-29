@@ -7,47 +7,125 @@
  	color:#424242;
  }
 
-h1.header-1{
-	font-size: 50px;
-	font-weight: 400;
-	line-height: 10px;
-	letter-spacing: 5px;
+.banner-text{
+  padding-top: -100px;
 }
 
-h2.header-2{
-	font-size:30px;
-	font-weight: 300;
-	margin-top: 30px;
+.parallax-container{
+  height: 440px;
 }
 
-// .parallax-container {
-//   height: "300px";
-// }
 .banner-image {
  background-image: linear-gradient(-225deg, rgba(0,0,0,0.35) 0%,
-   rgba(0,0,0,0.35) 50%), image-url('home_banner.jpg');
- width: 100%;
- height: 100vh;
- background-size: cover;
+   rgba(0,0,0,0.35) 50%), image-url('banner1.jpg');
+ z-index: -20;
+ max-width: 100%;
+ height: auto;
+ background-size: cover !important;
  background-repeat: no-repeat;
- display: flex;
+ padding-top: 100px;
  text-align: center;
  justify-content: center;
  align-items: center;
+ opacity: 0.8;
  color: white;
- //margin-bottom: -10px;
 }
-.project-image {
+li.project-image {
  background-image: linear-gradient(-225deg, rgba(0,0,0,0.35) 0%,
    rgba(0,0,0,0.35) 50%), image-url('project.jpg');
  width: 100%;
- height: 100vh;
- background-size: cover;
+ height: auto;
+ background-size: cover !important;
+ background-attachment: fixed;
  background-repeat: no-repeat;
  display: flex;
  text-align: center;
  justify-content: center;
  align-items: center;
  color: white;
- //margin-bottom: -10px;
+}
+li.project2-image {
+ background-image: linear-gradient(-225deg, rgba(0,0,0,0.35) 0%,
+   rgba(0,0,0,0.35) 50%), image-url('project2.jpg');
+ max-width: 100%;
+ height: auto;
+ opacity: 0.5;
+ background-size: cover !important;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ display: flex;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ color: white;
+}
+li.project3-image {
+ background-image: linear-gradient(-225deg, rgba(0,0,0,0.35) 0%,
+   rgba(0,0,0,0.35) 50%), image-url('project3.jpg');
+ max-width: 100%;
+ height: auto;
+ opacity: 0.5;
+ background-size: cover !important;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ display: flex;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ color: white;
+}
+.team-image {
+ background-image: linear-gradient(-225deg, rgba(0,0,0,0.35) 0%,
+   rgba(0,0,0,0.35) 50%), image-url('team.jpeg');
+ max-width: 100%;
+ height: 100vh;
+ opacity: 0.5;
+ background-size: cover !important;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ display: flex;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ color: white;
+}
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: white;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: red;
+}
+#return-to-top:hover i {
+    color: white;
+    top: 5px;
 }

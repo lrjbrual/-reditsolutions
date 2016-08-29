@@ -8,10 +8,14 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   </head>
   <body>
-    <%= render 'layouts/navbar' %>
+    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
     <%= yield %>
     <%= javascript_include_tag 'application' %>
   </body>
+  <footer class="page-footer teal accent-4">
+    <%= render 'layouts/footer' %>
+  </footer>
 </html>
