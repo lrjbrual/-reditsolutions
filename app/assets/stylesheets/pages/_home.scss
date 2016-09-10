@@ -19,15 +19,18 @@
  background-image: linear-gradient(-225deg, rgba(0,0,0,0.35) 0%,
    rgba(0,0,0,0.35) 50%), image-url('banner1.jpg');
  z-index: -20;
- max-width: 100%;
- height: auto;
+ -moz-background-size: 100% 100%;
+ -webkit-background-size: 100% 100%;
+ -o-background-size: 100% 100%;
+ // max-width: 100%;
+ // height: auto;
  background-size: cover !important;
- background-repeat: no-repeat;
+ // background-repeat: no-repeat;
  padding-top: 100px;
  text-align: center;
  justify-content: center;
  align-items: center;
- opacity: 0.8;
+ opacity: .9;
  color: white;
 }
 li.project-image {
@@ -89,6 +92,27 @@ li.project3-image {
  align-items: center;
  color: white;
 }
+.map-image {
+ background-image: image-url('map.jpg');
+ max-width: 100%;
+ height: auto;
+ opacity: 0.5;
+ background-size: cover !important;
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ display: flex;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ color: white;
+}
+p.main{
+  text-align: justify;
+}
+.p-main{
+  text-align: left;
+  padding-left: 20px;
+}
 #return-to-top {
     position: fixed;
     bottom: 20px;
@@ -108,6 +132,10 @@ li.project3-image {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    z-index: 10;
+}
+.p-contact-main{
+  padding-top: 50px;
 }
 #return-to-top i {
     color: white;
