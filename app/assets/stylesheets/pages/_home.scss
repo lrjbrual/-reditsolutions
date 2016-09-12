@@ -82,7 +82,7 @@ li.project3-image {
    rgba(0,0,0,0.35) 50%), image-url('team.jpeg');
  max-width: 100%;
  height: 100vh;
- opacity: 0.5;
+ opacity: 0.9;
  background-size: cover !important;
  background-attachment: fixed;
  background-repeat: no-repeat;
@@ -160,5 +160,18 @@ p.main{
 
 .material-icons.red600{
 color:#b71c1c;
+}
+
+.about-image{
+margin-left:133px;
+}
+
+i.right{
+margin-top: 12px;
+margin-left:0px;
+}
+
+.card.about{
+width:100%;
 }
 
