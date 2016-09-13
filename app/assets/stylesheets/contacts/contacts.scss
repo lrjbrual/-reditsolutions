@@ -1,0 +1,28 @@
+.contact-layout{
+	min-height: 100%;
+}
+
+.contact-image {
+ background-image: linear-gradient(-225deg, rgba(0,0,0,0.35) 0%,
+   rgba(0,0,0,0.35) 50%), image-url('contact-image.jpeg');
+ z-index: -20;
+ background-size: cover !important;
+ padding-top: 100px;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ opacity: .8;
+ color: white;
+}
+.p-contact{
+	padding-top: 120px;
+}
+.input-field label {
+	color: #333333;
+}
+.contact-container{
+	height:100%;
+}
+.company-info{
+	margin-top: 60px;
+}
