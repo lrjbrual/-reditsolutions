@@ -34,21 +34,25 @@
           <h6>Send us email for more inquiries</h6>
           <%= form_for :contact, url: contacts_path do |f| %>
              <div class="input-field col s12">
-               <%= f.text_field :your_name, required:true, id:"your_name", type:"text", class: "validate" %>
-               <%= f.label :your_name, for:"your_name"  %>
+               <%= f.text_field :name, required:true, id:"name", type:"text", class: "validate" %>
+               <%= f.label :your_name, for:"name", required: true   %>
              </div>
               <div class="input-field col s12">
-                <%= f.text_field :phone_number, required:true, id:"phone_number", type:"text", class: "validate" %>
-                <%= f.label :phone_number, for:"phone_number"  %>
+                <%= f.text_field :phone, required:true, id:"phone", type:"text", class: "validate" %>
+                <%= f.label :phone_number, for:"phone", required: true  %>
               </div>
               <div class="input-field col s12 left">
                 <%= f.email_field :email, required:true, id: "email", type: "email", class:"validate" %>
-                <%= f.label :your_email, for: "Email" %>
+                <%= f.label :your_email, for: "Email", required: true  %>
               </div>
               <div class="input-field col s12">
                <%= f.text_field :message, required:true, id: "textarea1", class:"materizalize-textarea"%>
-               <%= f.label :type_your_message, for: "textarea1" %>
+               <%= f.label :type_your_message, for: "textarea1", required: true  %>
              </div>
+              <div class="hidden">
+                <%= f.label :nickname %><br>
+                <%= f.text_field :nickname, hint: 'leave this black' %>
+              </div>
             <div class="send-button">
               <%= f.submit 'Send Message', class:"waves-effect waves-light btn orange accent-2"%>
             </div>
