@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NetStarted</title>
+
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-</head>
-<body>
-  <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
-  <%= yield %>
-  <%= javascript_include_tag 'application' %>
-</body>
-<footer class="page-footer orange darken-4">
-  <%= render 'layouts/footer' %>
-</footer>
-</html>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <title>NetStarted</title>
+       <%= favicon_link_tag '#' %>
+       <%= csrf_meta_tags %>
+       <%= stylesheet_link_tag    'application', media: 'all' %>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+   </head>
+   <body>
+     <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+     <%= yield %>
+     <%= javascript_include_tag 'application' %>
+   </body>
+   <footer class="page-footer teal accent-4">
+     <%= render 'layouts/footer' %>
+   </footer>
+ </html>
