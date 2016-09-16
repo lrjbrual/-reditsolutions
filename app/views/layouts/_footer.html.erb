@@ -1,17 +1,20 @@
-<div class="wrapper footer-copyright">
-  <div class="row col l6 s12">
-    <div class="col l6 s6">
+<div class="footer-copyright">
+  <div class="container">
     <%=link_to root_path  do%>
-      &copy&nbsp<b>NetStarted</b> | Allrights reserved
-      <% end %>
-    </div>
-    <div class="col l6 s6">
-      <ul>
-        <li class="li-footer">FOLLOW US ON:</li>
-        <li class="li-footer"><a href="#" target="_blank" class="grey-text text-lighten-3" href="#!"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>
-        <li class="li-footer"><a href="#" target="_blank" class="grey-text text-lighten-3" href="#!"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
-        <li class="li-footer"><a href="#" target="_blank" class="grey-text text-lighten-3" href="#!"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a></li>
-      </ul>
-    </div>
+    &copy&nbsp<b >NetStarted</b> | Allrights reserved
+    <% end %>
+
+    <%= link_to "https://github.com/orgs/NetStarted/dashboard", class:"grey-text text-lighten-4 right links", target:"blank" do %>
+    <i class="fa fa-github-square fa-2x hoverable" aria-hidden="true"></i>
+    <% end %>
+
+    <%= link_to "https://twitter.com/MikeNetStarted", class:"grey-text text-lighten-4 right links", target:"blank" do %>
+    <i class="fa fa-twitter-square fa-2x hoverable" aria-hidden="true"></i>
+    <% end %>
+
+    <%= link_to "https://www.linkedin.com/groups/8574144", class:"grey-text text-lighten-4 right links", target:"blank" do %>
+    <i class="fa fa-linkedin-square fa-2x hoverable" aria-hidden="true"></i>
+    <% end %>
+
   </div>
 </div>
