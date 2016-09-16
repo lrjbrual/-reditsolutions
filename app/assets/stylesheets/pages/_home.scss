@@ -174,7 +174,7 @@ color:#b71c1c;
 }
 
 .about-image{
-margin-left:133px;
+  text-align: center;
 }
 
 i.right{
@@ -182,10 +182,29 @@ margin-top: 12px;
 margin-left:0px;
 }
 
-.card.about{
-width:100%;
-}
-
 i.right.send{
 margin-top:0px;
+}
+
+.card .card-image img{
+left:50%;
+right: 50%;
+}
+
+.card.small{
+height: 400px;
+}
+
+.rjay{
+margin-top:70px;
+}
+
+p.quote {
+    font-size: 10px;
+    float: left;
+    margin-left: 15px;
+}
+
+.mike{
+margin-top: 45px;
 }
