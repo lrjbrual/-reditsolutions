@@ -80,4 +80,6 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { host: 'https://reditsolutions.herokuapp.com', protocol: 'htttps'}
 
+  GA.tracker = "UA-84400866-1"
+
 end
