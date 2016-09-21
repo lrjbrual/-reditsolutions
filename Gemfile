@@ -19,6 +19,7 @@ gem 'google-analytics-rails', '1.1.0'
 
 
 
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
