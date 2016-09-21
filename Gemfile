@@ -16,8 +16,7 @@ gem 'font-awesome-sass'
 gem 'autoprefixer-rails'
 gem 'mail_form'
 gem 'google-analytics-rails', '1.1.0'
-
-
+gem 'meta-tags'
 
 
 group :development, :test do
