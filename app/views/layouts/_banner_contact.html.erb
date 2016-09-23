@@ -3,11 +3,11 @@
       <h3>“From an Idea to a Business there is only one step.”
       </h3>
       <br><br>
-    <div class="row center">
-      <button class="btn btn-large waves-effect waves-light light-blue darken-3 hoverable" type="submit" name="action">GET IN TOUCH NOW
-        <i class="material-icons right send">send</i>
-      </button>
-    </div>
+      <div class="row center">
+        <%= link_to new_contact_path, class: "btn btn-large waves-effect waves-light light-blue darken-3 hoverable" do %>
+          GET IN TOUCH<i class="material-icons right send">send</i>
+        <% end %>
+      </div>
   </div>
       <div class="parallax map-image">
       </div>
