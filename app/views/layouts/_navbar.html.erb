@@ -1,26 +1,63 @@
   <nav>
     <div class="nav-wrapper">
+
       <%= link_to 'NetStarted', root_path, class: "brand-logo red600" %>
+      
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons deep-orange accent-4">menu</i></a>
-      <ul class="right hide-on-med-and-down nav-width">
-        <li><%= link_to root_path do %>
+
+
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <%= link_to root_path do %>
           <i class="material-icons color-red">home</i>
+          <% end %>
         </li>
-            <% end %>
-        <li><a href="#services" class="waves-effect waves-red type="button">Services</a></li>
-        <li><a href="#projects" class="waves-effect waves-green">Projects</a></li>
-        <li><a href="#about" class="waves-effect waves-yellow">About</a></li>
+
+        <li><%= link_to root_path(anchor:"services") do %>
+          Services
+          <% end %>
+        </li>
+
+        <li><%= link_to root_path(anchor:"projects") do%>
+          Projects
+          <% end %>
+        </li>
+
+        <li>
+          <%= link_to root_path(anchor:"about") do%>
+          About
+          <% end %>
+        </li>
+
         <li><%= link_to 'Contact', new_contact_path, class: "waves-effect waves-light btn modal-trigger" %>
         </li>
+
       </ul>
+
       <ul class="side-nav" id="mobile-demo">
         <li><%= link_to root_path do %>
           <i class="material-icons color-red">home</i>
         </li>
+        <% end %>
+
+        <li>
+          <%= link_to root_path(anchor:"services"), class: "red-text text-darken-4" do %>
+          Services
           <% end %>
-        <li><a href="#services" class="red-text text-darken-4" >Services</a></li>
-        <li><a href="#projects" class="red-text text-darken-4">Projects</a></li>
-        <li><a href="#" class="red-text text-darken-4">About</a></li>
+        </li>
+
+
+        <li>
+          <%= link_to root_path(anchor:"projects"), class: "red-text text-darken-4" do %>
+          Projects
+          <% end %>
+        </li>
+
+        <li>
+          <%= link_to root_path(anchor:"about"), class: "red-text text-darken-4" do %>
+          About
+          <% end %>
+        </li>
         <li><%= link_to 'Contact', new_contact_path, class: "waves-effect waves-light btn modal-trigger"%>
         </li>
       </ul>
