@@ -13,6 +13,4 @@ ActionMailer::Base.smtp_settings = {
   :enable_starttls_auto => true
 }
 
-DEFAULT_META = YAML.load_file(Rails.root.join('config/meta.yml'))
-
 Rails.application.initialize!
