@@ -27,27 +27,27 @@
         </span>
       </div>
     </div>
-  </div>
+</div>
     <div class="col s12 m7 l7">
+    <%= form_for :form, url: forms_path do |f| %>
       <form class="col s12">
           <h4>Contact Us</h4>
           <h6>Send us email for more inquiries</h6>
-          <%= form_for :contact, url: contacts_path do |f| %>
              <div class="input-field col s12">
                <%= f.text_field :name, required:true, id:"name", type:"text", class: "validate" %>
                <%= f.label :your_name, for:"name", required: true   %>
              </div>
               <div class="input-field col s12">
-                <%= f.text_field :phone, required:true, id:"phone", type:"text", class: "validate" %>
-                <%= f.label :phone_number, for:"phone", required: true  %>
+                <%= f.text_field :phone, required:true, id:"phone", type:"tel", class: "validate" %>
+                <%= f.label :phone_number, for:"phone"%>
               </div>
               <div class="input-field col s12 left">
                 <%= f.email_field :email, required:true, id: "email", type: "email", class:"validate" %>
-                <%= f.label :your_email, for: "Email", required: true  %>
+                <%= f.label :your_email, for: "Email" %>
               </div>
               <div class="input-field col s12">
                <%= f.text_field :message, required:true, id: "textarea1", class:"materizalize-textarea"%>
-               <%= f.label :type_your_message, for: "textarea1", required: true  %>
+               <%= f.label :type_your_message, for: "textarea1" %>
              </div>
               <div class="hidden">
                 <%= f.label :nickname %><br>
@@ -56,8 +56,8 @@
             <div class="send-button">
               <%= f.submit 'Send Message', class:"waves-effect waves-light btn orange accent-2"%>
             </div>
-          <% end %>
       </form>
+    <% end %>
     </div>
   </div>
       <div class="parallax map-image">
